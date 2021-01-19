@@ -1,13 +1,16 @@
 [![Maintained by Zibusiso Edwin Ndlovu]](https://github.com/zibusiso-ndlovu/terraform-examples)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.12.0-blue.svg)
 
-# An Introduction to Terraform Sample Code
+# An Introduction To Terraform Sample Code
 
 This repo contains the sample code for various infrastructure provisioning in AWS, GCP and AZURE using Terraform 
 
 1. [How to Manage Terraform State](https://www.terraform.io/docs/backends/types/s3.html)
     * [terraform-s3-backend](./terraform-s3-backend): Create an S3 bucket and DynamoDB table to use as a Terraform backend. 
-       
+  
+1. [Terraform Single Webserver On AWS EC2 Using]
+    * [terraform-single-web-server-ec2](./terraform-single-web-server-ec2): Deploy a single EC2 Instance with a web server that will return
+      "Hello, World" for every request on port 8080.
 
 ## Quick start
 
