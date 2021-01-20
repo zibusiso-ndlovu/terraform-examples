@@ -25,6 +25,10 @@ This repo contains the sample code for various infrastructure provisioning in AW
 1. After it's done deploying, the example will output URLs or IPs you can try out.
 1. To clean up and delete all resources after you're done, run `terraform destroy`.
 
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+*auto populated information
+<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ## License
 
 Please see [LICENSE.txt](/LICENSE.txt) for details on how the code in this repo is licensed.

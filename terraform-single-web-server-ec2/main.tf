@@ -51,9 +51,19 @@ resource "aws_security_group" "instance" {
   name = "terraform-example-instance"
 
   # Inbound HTTP from anywhere
+  # Code below should be implemented in a Dynamic Block 
   ingress {
     from_port   = var.server_port
     to_port     = var.server_port
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+   # Inbound HTTPS from anywhere
+  ingress {
+    description = "TLS from anywhere"
+    from_port   = 443
+    to_port     = 443
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }

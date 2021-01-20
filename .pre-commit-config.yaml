@@ -5,4 +5,9 @@ repos:
       - id: terraform-fmt
       - id: terraform_validate_no_variables
       - id: gofmt
+  - repo: git://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.45.0 # Get the latest from: https://github.com/antonbabenko/pre-commit-terraform/releases
+    hooks:
+      - id: terraform_tfsec
+      - id: terraform_docs
 
